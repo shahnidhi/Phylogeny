@@ -1,0 +1,7 @@
+awk -F" " '{if ($2) print $2}' count_query.txt | grep -w 100 | wc -l
+50043
+nidhi@Nidhi-Laptop:~/Summer2016/project$ wc -l count_query.txt 
+60284 count_query.txt
+nidhi@Nidhi-Laptop:~/Summer2016/project$ awk -F" " '{if ($2) print $2}' count_query.txt | grep -v 100 | wc -l
+10241
+
